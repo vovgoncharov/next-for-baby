@@ -1,3 +1,7 @@
+:root {
+  --brown: #b37977;
+  --dark-brown: #4d321e;
+}
 html,
 body {
   padding: 0;
@@ -13,6 +17,7 @@ a {
 
 * {
   box-sizing: border-box;
+  font-family: Nunito, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
