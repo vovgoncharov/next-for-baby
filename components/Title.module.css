@@ -1,0 +1,9 @@
+.title {
+    margin: 0;
+    padding-top: 60px;
+    color: var(--brown);
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 41px;
+    text-align: center;
+  }

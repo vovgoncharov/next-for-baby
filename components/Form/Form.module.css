@@ -1,0 +1,202 @@
+.icon {
+  padding-right: 30px;
+  border: 2px solid red;
+}
+
+.block__label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.checkbox {
+  display: none;
+}
+.label {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.block__password {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.fake__check {
+  top: 5px;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  border: 1px solid var(--brown);
+  background-color: #f5f3f3;
+  border-radius: 4px;
+  position: relative;
+}
+.fake__check:before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -1px;
+  top: -1px;
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  background: url(../../public/checked-svgrepo-com.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 70%;
+  background-position: 50% 50%;
+  opacity: 0;
+  transition: 0.5s;
+}
+.checkbox:checked + .fake__check:before {
+  opacity: 1;
+}
+.check {
+  font-weight: 400;
+  color: var(--dark-brown);
+  margin-left: 15px;
+}
+
+.forget__pass {
+  margin-left: 10px;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--brown);
+  font-weight: 700;
+}
+
+.forget__pass {
+  font-weight: 600;
+}
+@media screen and (max-width: 1250px) {
+  .title {
+    padding-top: 30px;
+  }
+  .form {
+    padding-bottom: 30px;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1130px) {
+  .title {
+    padding-top: 20px;
+    padding-bottom: 5px;
+  }
+  .form {
+    padding-bottom: 10px;
+    width: 80%;
+  }
+  .text {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 950px) {
+  .title {
+    font-size: 20px;
+  }
+  .text {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .email,
+  .password {
+    font-size: 14px;
+    line-height: 14px;
+    border-radius: 6px;
+    width: 80%;
+    min-height: 35px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  .email {
+    background-position: 17px 10px;
+  }
+  .password {
+    background-position: 17px 4px;
+  }
+  .check {
+    font-size: 14px;
+    margin-left: 15px;
+    margin-right: 40px;
+  }
+  .register,
+  .forget__pass {
+    font-size: 14px;
+  }
+  .label {
+    margin-left: 40px;
+  }
+  .fake__check {
+    width: 15px;
+    height: 15px;
+    top: 2px;
+  }
+  .fake__check:before {
+    width: 15px;
+    height: 15px;
+  }
+  .button {
+    display: block;
+    font-size: 16px;
+    line-height: 16px;
+    margin: 10px auto;
+  }
+}
+@media screen and (max-width: 800px) {
+  .form {
+    padding-bottom: 10px;
+    width: 70%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .button {
+    display: block;
+    font-size: 16px;
+    line-height: 16px;
+    margin: 10px auto;
+    padding: 11px 50px;
+  }
+  .label {
+    display: block;
+    text-align: center;
+  }
+  .register,
+  .forget__pass,
+  .span {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .email,
+  .password {
+    font-size: 14px;
+    line-height: 14px;
+    border-radius: 6px;
+    width: 50%;
+    min-height: 35px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  .inputs {
+    border: none;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .form {
+    padding-bottom: 10px;
+    width: 70%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .check {
+    margin-left: 10px;
+    margin-right: 20px;
+    font-size: 12px;
+  }
+  .email {
+    background-position: 10px 10px;
+    padding-left: 35px;
+  }
+  .password {
+    background-position: 10px 4px;
+    padding-left: 35px;
+  }
+}

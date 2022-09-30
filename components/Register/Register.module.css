@@ -1,0 +1,16 @@
+.span {
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--dark-brown);
+}
+.register {
+  display: block;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--brown);
+  font-weight: 700;
+}
+.block__register {
+  display: flex;
+  justify-content: space-evenly;
+}

@@ -1,0 +1,11 @@
+.text {
+  color: var(--dark-brown);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+.block__password {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }

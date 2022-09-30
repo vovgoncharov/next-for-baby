@@ -1,20 +1,30 @@
 {
-  "name": "next",
+  "name": "parents",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "server": "json-server-auth --watch db.json --port 5000",
+    "serve": "concurrently \"npm run dev\" \"npm run server\""
   },
   "dependencies": {
+    "async-await": "^0.1.40",
+    "body-parser": "^1.20.0",
+    "concurrently": "^7.4.0",
+    "jsonwebtoken": "^8.5.1",
     "next": "12.3.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-icons": "^4.4.0",
+    "server-js": "^0.1.4"
   },
   "devDependencies": {
     "eslint": "8.24.0",
-    "eslint-config-next": "12.3.1"
+    "eslint-config-next": "12.3.1",
+    "json-server": "^0.17.0",
+    "json-server-auth": "^2.1.0"
   }
 }

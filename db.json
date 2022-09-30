@@ -1,0 +1,50 @@
+{
+  "admission": [
+    {
+      "email": "deykdog@gmail.com",
+      "password": "@xATsH@X9LRt3!W",
+      "id": 1
+    }
+  ],
+  "passwordRecoveryEmail": [],
+  "passwordRecoveryCode": [],
+  "newPassword": [],
+  "registerPost": [
+    {
+      "email": "deykdog@gmail.com",
+      "id": 1
+    },
+    {
+      "email": "deykdog@gmail.com",
+      "id": 2
+    },
+    {
+      "email": "deykdog@gmail.com",
+      "id": 3
+    }
+  ],
+  "register": [
+    {
+      "email": "deykdog@gmail.com",
+      "password": "Motivation@",
+      "id": 1
+    }
+  ],
+  "users": [
+    {
+      "email": "deykdog@gmail.com",
+      "password": "$2a$10$QKcoYEppScXwXOs6aWPscuE8j.BoEx0ORT40nIoctvajS/JhCTJx.",
+      "id": 1
+    },
+    {
+      "email": "mambuk@gmail.com",
+      "password": "$2a$10$0oRNA9Lwo8f47mx7PQKrzepU4tlduxvToQsHdI1b7q7uMxKVG6BD6",
+      "id": 2
+    },
+    {
+      "email": "adasdsa@ewwfder",
+      "password": "$2a$10$7EOxHV3mJUagwNnvAJev.e4xznDd9wIExN6.vYEX7TJ1isYS5fBi.",
+      "id": 3
+    }
+  ]
+}

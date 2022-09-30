@@ -1,0 +1,38 @@
+.block__gomail {
+  width: 523px;
+  height: 232px;
+  background-color: var(--white);
+  border-radius: 12px 12px 12px 12px;
+  margin: 0 auto;
+  position: relative;
+  opacity: 1;
+  transition: 0.5s;
+}
+.block__hide {
+  width: 523px;
+  height: 232px;
+  background-color: var(--white);
+  border-radius: 12px 12px 12px 12px;
+  margin: 0 auto;
+  position: relative;
+  opacity: 0;
+  transition: 0.5s;
+}
+.close {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 30px;
+  right: 30px;
+  background-image: url(../../public/close.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 139.4%;
+  color: var(--dark-brown);
+  text-align: center;
+  padding: 80px 90px;
+}
