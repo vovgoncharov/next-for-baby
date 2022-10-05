@@ -49,6 +49,7 @@ const Form = () => {
     })
       .then((response) => response.json())
       .then((data) => {
+        // data => { access_token: 'JWT token', refresh_token: 'sting' }
         if (data) {
           setEmail(data);
           setPassword(data);

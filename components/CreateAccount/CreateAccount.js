@@ -15,7 +15,9 @@ const CreateAccount = () => {
   const [valid, setValid] = useState("");
   const [eye, setEye] = useState(false);
   const [repeat, setRepeat] = useState(false);
+
   const router = useRouter();
+  const token = router.query.token;
 
   const handleIconClick = () => {
     setEye(!eye);
@@ -33,8 +35,7 @@ const CreateAccount = () => {
     setPasswordrepeat(e.target.value);
   };
 
-  const handleFormSubmit = (e) => {
-    e.preventDefault();
+  const handleFormSubmit = () => {
     const arr = password
       .split("")
       .filter(
@@ -62,7 +63,7 @@ const CreateAccount = () => {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ name, password }),
+      body: JSON.stringify({ name, password, token }),
     })
       .then((response) => response.json())
       .then((data) => {
@@ -160,7 +161,7 @@ const CreateAccount = () => {
         </div>
         <div className="valid">{valid}</div>
         <Input
-          type="submit"
+          onClick={handleFormSubmit}
           value="Зарегистрироваться"
           className="button regist-button"
         />
